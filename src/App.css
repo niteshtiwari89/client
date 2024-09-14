@@ -1,38 +1,172 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#root{
+  width: 100%;
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mainPage{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:azure;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form{
+  height: 15%;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  background-color: antiquewhite;
+  padding: 10px;
+}
+
+.form p{
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  background-color: aquamarine;
+}
+
+
+/* AdminPage */
+
+/* .mainPageAdmin{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:azure;
+}
+
+.formAdmin{
+  height: 20%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.formAdminLogin{
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.formAdminLogin button{
+  align-self: flex-end;  
+}
+.nav-link{
+  width: 100%;
+} */
+
+.tab-content{
+  height: 90%;
+  padding: 10px;
+}
+.fade{
+  height: 100%;
+}
+
+
+/* DashBoard */
+
+.dashContainer{
+  width: 100%;
+  height: 100%;
+  /* background-color: yellowgreen; */
+}
+.classes,.material{
+  display: flex;
+  height: 50%;
+  width: 100%;
+  flex-direction: column;
+}
+.header{
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+}
+.content{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 40%;
+  flex-wrap: wrap;
+}
+.content-box{
+  width: 30%;
+  height: 100%;
+  border: 1px solid;
+  margin-bottom: 5px;
+  background-color: antiquewhite;
+}
+
+
+/* modal-css */
+
+/* styles.css */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.578);
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  width: 50%;
+}
+
+.modal-content h2{
+  margin: 0 0 20px;
+  color: whitesmoke;
+}
+.modal-content h4{
+  margin: 0 0 20px;
+  color: whitesmoke;
+}
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content input {
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+.modal-content button {
+  padding: 8px;
+  margin-top: 10px;
+}
+
+.modal-content button:first-of-type {
+  background-color: #4CAF50;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.modal-content button:last-of-type {
+  background-color: #f44336;
+  color: white;
 }
